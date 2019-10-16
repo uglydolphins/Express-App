@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder App</title>
+    <!-- Link to the jQuery Library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Including Font Awesome Icons -->
+    <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div id="mainpanel-content">
+                        <h2>Survey Questions</h2>
+                        <div class="divider"></div>
+
+                        <div class="input-field col s6">
+                            <h5>Name (Required)</h5>
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+                        </div>
+
+                        <div class="input-field col s6">
+                            <h5>Link to Photo Image (Required)</h5>
+                            <i class="material-icons prefix">picture_in_picture</i>
+                            <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+                        </div>
+
+                   <!-- Survey Questions -->
+                        <div class="input-field col s12">
+                            <h3>Question 1</h3>
+                            <h5>You love exploring new resturants.</h5>
+                            <select id="question1">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 2</h3>
+                            <h5>You're a winter person.</h5>
+                            <select id="question2">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 3</h3>
+                            <h5>You're a summer person.</h5>
+                            <select id="question3">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 4</h3>
+                            <h5>You rather live like a local and do local activities when traveling than do touristy stuff.</h5>
+                            <select id="question4">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 5</h3>
+                            <h5>You consider yourself more creative than technical.</h5>
+                            <select id="question5">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 6</h3>
+                            <h5>You love plants and nature.</h5>
+                            <select id="question6">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 7</h3>
+                            <h5>You hate new york city.</h5>
+                            <select id="question7">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 8</h3>
+                            <h5>You are a family person.</h5>
+                            <select id="question8">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 9</h3>
+                            <h5>You live life like you're on an adventure.</h5>
+                            <select id="question9">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h3>Question 10</h3>
+                            <h5>You believe money doesn't buy happiness.</h5>
+                            <select id="question10">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <!-- Survey Submit Button -->
+                        <div>
+                            <button class="btn waves-effect waves-light" type="submit" name="action"
+                                id="submitButton">Submit Responses
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="blue-text text-lighten-3" href="/api/friends">API Friends List</a></li>
+                    
+                </ul>
+            </div>
+
+        </div>
+        
+    </main>
+    <!-- /.................................................................................... -->
+
+    <!-- Modal after completition -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Closest Friend Match</h4>
+            <div class="divider"></div>
+            <h5 id="userMatch"></h5>
+            <img id="userMatchImage" class="materialboxed" width="650" src="">
+        </div>
+        <div class="modal-footer">
+            <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('select').material_select();
+            $('.modal').modal({
+                dismissible: false, // Modal can be dismissed by clicking outside of the modal
+                opacity: .5, // Opacity of modal background
+                inDuration: 300, // Transition in duration
+                outDuration: 200, // Transition out duration
+                startingTop: '4%', // Starting top style attribute
+                endingTop: '10%' // Ending top style attribute
+            });
+        });
+        // Activate submit button
+        $('#submitButton').on('click', function (event) {
+            event.preventDefault();
+            // Gather user inputs
+            var userInput = {
+                name: $('#userName').val().trim(),
+                photo: $('#userPhoto').val().trim(),
+                scores: [
+                    $('#question1').val().trim(),
+                    $('#question2').val().trim(),
+                    $('#question3').val().trim(),
+                    $('#question4').val().trim(),
+                    $('#question5').val().trim(),
+                    $('#question6').val().trim(),
+                    $('#question7').val().trim(),
+                    $('#question8').val().trim(),
+                    $('#question9').val().trim(),
+                    $('#question10').val().trim()
+                ]
+            };
+           
+            // Add user inputs to friends list
+            $.post('/api/friends', userInput)
+                .done(function (data) {
+                    
+                    // Set the name and image values of friend match
+                    $('#userMatch').html(data.matchName);
+                    $("#userMatchImage").attr("src", data.matchImage);
+                    // Pop open the modal dialog
+                    $('#modal1').modal('open');
+                });
+        });
+    </script>
+</body>
+
+</html>
